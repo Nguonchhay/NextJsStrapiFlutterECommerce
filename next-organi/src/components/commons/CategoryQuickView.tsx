@@ -1,5 +1,5 @@
 export default function CategoryQuickView() {
   return (
-    <div>CategoryQuickView</div>
+    <div className="pt-3">CategoryQuickView</div>
   )
 }
