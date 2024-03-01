@@ -5,44 +5,44 @@ import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter } from "@fortawesome
 
 export default function MetaNav() {
   return (
-    <div className="bg-slate-50">
-      <div className="px-[7rem]">
+    <div className="flex items-center bg-slate-50 h-10">
+      <div className="flex justify-between w-full px-[7rem]">
         <div>
-          <ul className="flex">
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
-              <a href="mailto:hello@colorlib.com">hello@colorlib.com</a>
+          <ul className="flex divide-x">
+            <li className="flex pr-5">
+              <FontAwesomeIcon icon={faEnvelope} className="w-4" />
+              <a href="mailto:hello@colorlib.com" className="pl-2">hello@colorlib.com</a>
             </li>
-            <li>
+            <li className="pl-5">
               Free Shipping for all Order of $99
             </li>
           </ul>
         </div>
 
         <div className="flex">
-          <ul className="flex">
-            <li>
-              <ul className="flex">
+          <ul className="flex divide-x">
+            <li className="pt-1">
+              <ul className="flex justify-between items-center w-32 pr-5">
                 <li>
-                  <FontAwesomeIcon icon={faFacebookF} />
+                  <FontAwesomeIcon icon={faFacebookF} className="w-2" />
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faTwitter} className="w-3" />
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faLinkedinIn} />
+                  <FontAwesomeIcon icon={faLinkedinIn} className="w-3" />
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faPinterestP} />
+                  <FontAwesomeIcon icon={faPinterestP} className="w-3" />
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="px-5">
               <LanguageMenu />
             </li>
-            <li className="flex">
-              <FontAwesomeIcon icon={faUser} />
-              <a href="/">Login</a>
+            <li className="flex pl-5">
+              <FontAwesomeIcon icon={faUser} className="w-3" />
+              <a href="/" className="pl-2">Login</a>
             </li>
           </ul>
         </div>
