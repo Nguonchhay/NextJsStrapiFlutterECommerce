@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/commons/Footer";
 import Header from "@/components/commons/Header";
 import MetaNav from "@/components/commons/MetaNav";
+import HomeBanner from "@/components/commons/HomeBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MetaNav />
         <Header />
+        <HomeBanner />
         {children}
         <Footer />
       </body>
